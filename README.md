@@ -1,2 +1,2 @@
-# miHazy.github.io
+# Корнейчук Михаил
 my first website
