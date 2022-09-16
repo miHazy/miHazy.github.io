@@ -1,0 +1,1 @@
+background: url(../img/smile.png) no-repeat left 495px bottom 0px, url(../img/skobki.png) no-repeat left 790px bottom 35px, url(../img/galochka.png) no-repeat left 1045px bottom 35px, url(../img/kubok.png) no-repeat left 1300px bottom 35px;
