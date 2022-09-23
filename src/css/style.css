@@ -22,14 +22,47 @@ nav{
 .menu li{
     float: left;
     line-height: 60px;
-    color: #fff;
+    color: white;
     margin-right: 40px;
     font-size: 16px;
+    font-weight: bold;
+}
+.menu li a{
+    transition: all 0.1s;
+    display: inline-block;
+}
+.menu li a:visited{
+    color: white;
+}
+.menu li a:hover{
+    color: #ee8700;
+    transform: scale(1.12);
 }
 .main{
     width: 100%;
     height: calc(100% - 60px);
-    background: url(../img/BOY.png) no-repeat 90% 100%/auto 85% , url(../img/BG.jpg) center/cover no-repeat;
+    background: url(../img/BG.jpg) center/cover no-repeat;
+}
+.main img{
+    position: absolute;
+    transition: all 4s;
+    height: 80%;
+    left: 57%;
+    top: 20%;
+    -webkit-animation: comming 4s;
+    -o-animation: comming 4s;
+    animation: comming 4s;
+    
+}
+.main img:active{
+    transform: rotate3d(1,1,1,360deg);
+}
+@keyframes comming{
+    from{
+    }
+    to{
+        transform: rotate3d(1,1,1,360deg);
+    }
 }
 .title_container{
     float: left;
@@ -54,6 +87,12 @@ nav{
     border-radius: 5px;
     padding: 0px 16px;
     margin: 58px 13px 0px 13px;
+    transition: all 0.1s;
+}
+.title_container input:hover{
+    background: #344051;
+    color: white;
+    transform: scale(1.12);
 }
 .about_me{
     width: 100%;
@@ -84,6 +123,7 @@ nav{
     font-size: 15px;
     font-weight: bold;
     text-align: center;
+    width: 730px;
 }
 
 .about_me input{
