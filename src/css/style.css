@@ -93,7 +93,7 @@ nav{
     -webkit-animation: comming 3s;
     -o-animation: comming 3s;
     animation: comming 3s;
-    
+    transition: all 3s;
 }
 .main img:active{
     transform: rotate3d(1,1,1,360deg);
