@@ -5,31 +5,72 @@ nav{
     width: 100%;
     height: 60px;
     background: #344051;
+    position: fixed;
+    z-index: 100;
 }
 .logo{
     color: #fff;
     font-size: 28px;
     line-height: 60px;
     padding-left: 388px;
-    float: left;
-        
+    float: left;      
+}
+.logo a{
+    transition: all 0.1s;
+    display: inline-block;
+    color: white;
+}
+.logo a:visited{
+    color: white;
+}
+.logo a:hover{
+    transform: scale(1.12); 
+    color: #ee8700;
 }
 .menu{
     float: left;
     padding-left: 432px;
-    
 }
 .menu li{
     float: left;
     line-height: 60px;
-    color: white;
     margin-right: 40px;
     font-size: 16px;
     font-weight: bold;
+    opacity: 0;
+    -webkit-animation: menu_anim 1s forwards;
+    -o-animation: menu_anim 1s forwards;
+    animation: menu_anim 1s forwards;
+}
+.menu li:nth-child(2){
+    animation-delay: 0.33s;
+}
+.menu li:nth-child(3){
+    animation-delay: 0.66s;
+}
+.menu li:nth-child(4){
+    animation-delay: 0.99s;
+}
+.menu li:nth-child(5){
+    animation-delay: 1.32s;
+}
+.menu li:nth-child(6){
+    animation-delay: 1.65s;
+}
+@keyframes menu_anim{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0;
+    }
 }
 .menu li a{
     transition: all 0.1s;
     display: inline-block;
+    color: white;
 }
 .menu li a:visited{
     color: white;
@@ -38,20 +79,20 @@ nav{
     color: #ee8700;
     transform: scale(1.12);
 }
+
 .main{
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/BG.jpg) center/cover no-repeat;
 }
 .main img{
     position: absolute;
-    transition: all 4s;
     height: 80%;
     left: 57%;
     top: 20%;
-    -webkit-animation: comming 4s;
-    -o-animation: comming 4s;
-    animation: comming 4s;
+    -webkit-animation: comming 3s;
+    -o-animation: comming 3s;
+    animation: comming 3s;
     
 }
 .main img:active{
@@ -73,12 +114,32 @@ nav{
 .title_container h1{
     font-size: 60px;
     font-weight: bold;
+    opacity: 0;
+    -webkit-animation: hi 2s forwards;
+    -o-animation: hi 2s forwards;
+    animation: hi 2s forwards;
+    animation-delay: 0.33s;
+}
+@keyframes hi{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 .title_container h4{
     font-size: 18px;
     margin-top: 48px;
     color: #79818d;
+    opacity: 0;
+    -webkit-animation: hi 2s forwards;
+    -o-animation: hi 2s forwards;
+    animation: hi 2s forwards;
+    animation-delay: 0.66s;
+    
 }
+
 .title_container input{
     color: #6d7682;
     height: 40px;
@@ -87,8 +148,14 @@ nav{
     border-radius: 5px;
     padding: 0px 16px;
     margin: 58px 13px 0px 13px;
+    opacity: 0;
     transition: all 0.1s;
+    -webkit-animation: hi 2s forwards;
+    -o-animation: hi 2s forwards;
+    animation: hi 2s forwards;
+    animation-delay: 0.99s;
 }
+
 .title_container input:hover{
     background: #344051;
     color: white;
@@ -125,7 +192,10 @@ nav{
     text-align: center;
     width: 730px;
 }
-
+.about_me li:hover{
+    transform: scale(1.12);
+    font-size: 16px;
+}
 .about_me input{
     font-size: 14px;
     color: #6f707e;
@@ -138,6 +208,11 @@ nav{
     border-radius: 5px;
     padding: 0px 11px;
     font-weight: 550;
+}
+.about_me input:hover{
+    transform: scale(1.12);
+    background-color: #344051;
+    color: white;
 }
 .what_i_can{
     width: 100%;
@@ -163,6 +238,9 @@ nav{
     height: 85px;
     background: url(../img/nout.png) no-repeat left 540px bottom 35px, url(../img/razrab.png) no-repeat left 790px bottom 35px, url(../img/rraketa.png) no-repeat left 1045px bottom 35px, url(../img/grammo.png) no-repeat left 1300px bottom 35px;
         
+}
+.i_can li:hover{
+    transform: scale(1.12);
 }
 .i_can li{
     height: 85px;
@@ -207,6 +285,9 @@ nav{
     margin: 22px 0px 0px 387px;
     font-weight: 600;
 }
+.cases input:hover{
+    transform: scale(1.12);
+}
 .hight_text{
     float: left;
     margin: 36px 0px 0px 0px;
@@ -215,6 +296,10 @@ nav{
     font-size: 15px;
     color: #3f495a;
     
+}
+.hight_text:hover{
+    transform: scale(1.12);
+    font-size: 16px;
 }
 .client_website{
     float: left;
@@ -279,6 +364,11 @@ nav{
     margin-left: 494px; 
     padding-left: 24px;
 }
+
+.price_style:hover{
+    transform: scale(1.12);
+}
+
 .calculation{
     float: left;
     border-top: 2px solid #d1d1d1;
@@ -336,6 +426,9 @@ nav{
     text-transform: uppercase;
     text-align: center;
 }
+.some_numbers li:hover{
+    transform: scale(1.12);
+}
 .some_numbers h4{
     padding-bottom: 30px;
     color: #323e4f;
@@ -366,6 +459,9 @@ nav{
     text-align: center;
     font-size: 15px;
     color: #243042;
+}
+.reviews p:hover{
+    transform: scale(1.12);
 }
 .mikhail p{
     float: left;
@@ -438,6 +534,9 @@ nav{
     font-size: 15px;
     color: white;
 }
+.lorem:hover{
+    transform: scale(1.12);
+}
 .contacts li{
     float: left;
     display: inline-block;
@@ -446,6 +545,9 @@ nav{
     padding-left: 65px;
     padding-top: 85px;
     font-size: 15px;
+}
+.contacts ul:hover{
+    transform: scale(1.12);
 }
 .contacts ul{
     float: left;
@@ -471,6 +573,7 @@ nav{
     background: #d3d6dc;
     padding-left: 13px;
 }
+
 .feedback h3{
     float: left;
     margin: 85px 0px 0px 0px;
@@ -504,8 +607,11 @@ nav{
     border-radius: 5px;
     background: none;
     color: white;
-    font-size: 18px;
-            
+    font-size: 18px;          
+}
+.send_btn:hover{
+    transform: scale(1.12);
+    
 }
 .footer{
     float: left;
