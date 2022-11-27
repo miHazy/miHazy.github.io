@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Андрей Браун - веб разработчик</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
    <header>
@@ -43,9 +44,8 @@
     <section class="main"><a name="Andrey"></a>
      <div class="container  h-100">
          <div class="row align-items-center h-100">
-             <div class="col-6 mt-5 pt-5">
+             <div class="col-12 col-xl-7 col-lg-8  mt-5 pt-5">
                  <div class="title_container mt-5 pt-5">
-                   <img src="img/BOY.png" class="img-fluid">
                     <h1>Привет<br>Я Андрей Браун</h1>
                     <h4>Фулл стек веб - разработчик и Android - разработчик</h4>
                     <a href="#about_me"><input type="submit" value="Обо мне"></a>
@@ -56,23 +56,103 @@
      </div>
     </section>
     <section class="about_me"><a name="about_me"></a>
-       <h2>ОБО МНЕ</h2>
-       <div class="about_text"><ul>
+       <div class="container">
+           <div class="row justify-content-center"><div class="col-12 col-md-3"><h2>ОБО МНЕ</h2></div></div>
+           <div class="row justify-content-center">
+               <div class="col-12 col-sm-10 col-md-9 col-lg-8 text-center">
+               <div class="about_text"><ul>
            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</li>
            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</li>
        </ul></div>
-       <input type="submit" value="Скачать резюме">
+        </div>
+          <div class="row justify-content-center"><div class="col-8 col-xl-2 col-lg-3 col-md-4 col-sm-5 text-center"><input type="submit" value="Скачать резюме"></div></div>
+           </div>
+           </div>
     </section>
     <section class="what_i_can"><a name="what_i_can"></a>
-        <h2>ЧТО Я УМЕЮ</h2>
-        <div class="i_can"><ul>
-               <li><h4>Веб-дизайн</h4>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</li>
-               <li><h4>Разработка</h4>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque.</li>
-               <li><h4>CEO-оптимизация</h4>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</li>
-               <li><h4>Маркетинг</h4>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</li>
-           </ul></div>
+        <div class="container h-100">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-4 col-lg-3"><h2>ЧТО Я УМЕЮ</h2></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-3 text-center ">
+                    <img src="img/nout.png" alt="">
+                </div>
+                <div class="col-3 text-center">
+                    <img src="img/razrab.png" alt="">
+                </div>
+                <div class="col-3 text-center">
+                    <img src="img/rraketa.png" alt="">
+                </div>
+                <div class="col-3 text-center">
+                    <img src="img/grammo.png" alt="">
+                </div>
+            </div>
+            <div class="i_can">
+                <div class="row h-100 d-none d-md-flex  justify-content-center">
+                   <div class="col-3"><h4>Веб-дизайн</h4>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</div>
+                   <div class="col-3"><h4>Разработка</h4>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque.</div>
+                   <div class="col-3"><h4>CEO-оптимизация</h4>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</div>
+                   <div class="col-3"><h4>Маркетинг</h4>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+            <div class="col-12 d-md-none d-block ">
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h4 class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Веб-дизайн
+                      </button>
+                    </h4>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h4 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Разработка
+                      </button>
+                    </h4>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h4 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        CEO-оптимизация
+                      </button>
+                    </h4>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h4 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Маркетинг
+                      </button>
+                    </h4>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="cases"><a name="cases"></a>
+ <!--   <section class="cases"><a name="cases"></a>
         <h2>КЕЙСЫ</h2>
         <div class="hight_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</div>
         <ul><div class="client_website"><li><h3>CLIENT :</h3></li>
@@ -164,7 +244,7 @@
         </div>
     </section>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6516.514101880017!2d55.945840823881696!3d54.72834662164763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43d93a433303e4a1%3A0x2dfce2baf992c71!2z0JDRgNGCINCa0LLQsNC00YDQsNGC!5e0!3m2!1sru!2sru!4v1662412370882!5m2!1sru!2sru" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <div class="footer"><footer>Copyright © 2021 Андрей Браун. Design by Web</footer></div>
+    <div class="footer"><footer>Copyright © 2021 Андрей Браун. Design by Web</footer></div>-->
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
