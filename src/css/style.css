@@ -85,40 +85,13 @@ nav{
 
 .main{
     width: 100%;
-    height: 100%;
-    background: url(../img/BG.jpg) center/cover no-repeat;
+    height: 100vh;
+    background: url(../img/BOY.png) 90% 100%/auto 85% no-repeat, url(../img/BG.jpg) center/cover no-repeat;
 }
 
-.main img{
-    position: absolute;
-    height: 80%;
-    left: 57%;
-    top: 20%;
-    -webkit-animation: comming 3s;
-    -o-animation: comming 3s;
-    animation: comming 3s;
-    transition: all 3s;
-}
-
-.title_container img{
-    -webkit-animation: comming 3s;
-    -o-animation: comming 3s;
-    animation: comming 3s;
-    transition: all 3s;
-}
-.main img:active{
-    transform: rotate3d(1,1,1,360deg);
-}
-@keyframes comming{
-    from{
-    }
-    to{
-        transform: rotate3d(1,1,1,360deg);
-    }
-}
 .title_container{
     text-align: center;
-    color: #2c384a;
+    color: #223549;
 }
 .title_container h1{
     font-size: 72px;
@@ -165,51 +138,67 @@ nav{
     animation-delay: 0.99s;
 }
 
+@media (max-width: 991px){
+    .title_container, .title_container h1, .title_container h4, .title_container input{
+        color: white;
+        position: relative;
+        z-index: 3;
+    }
+    .main{
+        position: relative;
+    }
+    .main::after{
+        content: "";
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        background: rgba(0,0,0,0.4);
+        z-index: 1;
+    }
+    .title_container input{
+        border: 2px solid white;
+    }
+}
+
 .title_container input:hover{
     background: #344051;
     color: white;
     transform: scale(1.12);
 }
+
 .about_me{
-    width: 100%;
-    height: 716px;
+    padding-bottom: 100px;
     background: url(../img/about.png) no-repeat top 224px left 50%;
 }
 .about_me h2{
-    float: left;
-    width: 100%;
+    margin-top: 110px;
     height: 60px;
-    margin-top: 105px;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
     color: #263244;
     background: url(../img/zagolovki.png) no-repeat top 54px left 50%;  
 }
-.about_text{
-    float: left;
-    margin-left: 595px;
-    margin-top: calc(283px - 31px);
-    width: 730px; 
+.about_text{ 
+    margin-top: 285px;
+}
+.about_text ul{
+    padding-left: 0px;
 }
 .about_text li{
-    padding: 25px;
+    padding-bottom: 25px;
     color: #717883;
     font-weight: 500;
     font-size: 15px;
     font-weight: bold;
-    text-align: center;
-    width: 730px;
 }
-.about_me li:hover{
-    transform: scale(1.12);
-    font-size: 16px;
-}
+
 .about_me input{
     font-size: 14px;
     color: #6f707e;
     background: url(../img/ico1.png) no-repeat bottom 50% left 11px;
-    margin-left: 873px;
     text-align: right;
     border: 2px solid #6f707e;
     height: 34px;
@@ -224,15 +213,13 @@ nav{
     color: white;
 }
 .what_i_can{
-    width: 100%;
     height: 523px;
     background: url(../img/bg2.jpg) no-repeat center/cover;
 }
 .what_i_can h2{
-    float: left;
-    width: 100%;
     height: 60px;
     margin-top: 105px;
+    margin-bottom: 102px;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
@@ -240,40 +227,60 @@ nav{
     background: url(../img/zagolovki.png) no-repeat top 54px left 50%;  
 }
 .i_can{
-    float: left;
-    padding-left: 418px;
-    padding-top: calc(217px - 31px);
+    
     text-align: center;
-    height: 85px;
-    background: url(../img/nout.png) no-repeat left 540px bottom 35px, url(../img/razrab.png) no-repeat left 790px bottom 35px, url(../img/rraketa.png) no-repeat left 1045px bottom 35px, url(../img/grammo.png) no-repeat left 1300px bottom 35px;
         
 }
 .i_can li:hover{
     transform: scale(1.12);
 }
-.i_can li{
+.i_can .col-3{
+    margin-top: 35px;
     height: 85px;
-    float: left;
-    width: 252px;
     color: #717883;
     font-size: 15px;
-    padding-left: 42px;
     font-weight: 550;
 
 }
 .i_can h4{
-    padding-bottom: 20px;
     color: #cf7600;
     font-size: 18px;
     font-weight: bold;
 }
+.accordion-button{
+    color: #263244;
+    font-weight: 600;
+}
+.accordion-item{
+    color: #717883;
+    font-size: 15px;
+    font-weight: 550;
+}
+.accordion-button:not(.collapsed){
+    background-color: #e5e7eb;
+    border-color: #263244;
+    color: #cf7600;
+}
+.accordion{
+    --bs-accordion-bg: #fafbff;
+    --bs-accordion-btn-focus-box-shadow: #263244;
+}
+@media (max-width:767px){
+    .what_i_can img{
+        display: none;
+    }
+    .what_i_can h2{
+        margin-bottom: 60px;
+    }
+}
 .cases{
-    height: 1085px;
-    background: url(../img/bg3.png) no-repeat top 254px left 0px;
+
+ 
+}
+.cases ul{
+    padding: 0px;
 }
 .cases h2{
-    float: left;
-    width: 100%;
     height: 60px;
     margin-top: 105px;
     text-align: center;
@@ -282,8 +289,21 @@ nav{
     color: #263244;
     background: url(../img/zagolovki.png) no-repeat top 54px left 50%;
 }
-.cases input{
+.hight_text{
     float: left;
+    margin: 36px 0px 0px 0px;
+    text-align: center;
+    font-size: 15px;
+    color: #3f495a;
+    
+}
+.cases img{
+    width: 100%;
+    margin-top: 47px;
+    margin-bottom: 42px;
+}
+.cases input{
+    margin-bottom: 160px;
     height: 42px;
     width: 198px;
     border: 2px solid #63b5ae;
@@ -291,34 +311,14 @@ nav{
     border-radius: 5px;
     color: white;
     font-size: 17px;
-    margin: 22px 0px 0px 387px;
     font-weight: 600;
 }
 .cases input:hover{
     transform: scale(1.12);
 }
-.hight_text{
-    float: left;
-    margin: 36px 0px 0px 0px;
-    width: 100%;
-    text-align: center;
-    font-size: 15px;
-    color: #3f495a;
-    
-}
-.hight_text:hover{
-    transform: scale(1.12);
-    font-size: 16px;
-}
-.client_website{
-    float: left;
-    height: 105px;
-    width: 185px;
-    margin: 659px 0 0 387px;
-    
-}
+
+
 .client_website li{
-    float: left;
     padding-top: 8px;
     color: #384354;
     font-size: 18px;
@@ -327,13 +327,10 @@ nav{
     font-weight: bold;
 }
 .project_name{
-    float: left;
-    height: 105px;
-    width: 850px;
-    margin: -105px 0 0 675px;
+
 }
 .project_name li{
-    float: left;
+
     padding-top: 8px;
     color: #384354;
     font-size: 18px;
@@ -341,7 +338,25 @@ nav{
 .project_name h3{
     font-weight: bold;
 }
-
+@media (max-width:576px){
+    .cases h2{
+        margin-top: 75px;
+    }
+    .client_website h3, .project_name li, .project_name h3{
+        font-size: 15px;
+    }
+    .cases img{
+        margin-top: 20px;
+    }
+    .hight_text{
+        margin-top: 10px;
+    }
+    .cases input{
+        font-size: 15px;
+        height: 30px;
+        width: 140px;
+    }
+}
 .price{
     height: 919px;
     
